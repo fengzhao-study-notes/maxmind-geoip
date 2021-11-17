@@ -52,6 +52,12 @@ maxmind提供了免费的可在本地部署的geo-ip数据库（GeoLite2）（mm
 
 此前，MaxMind一直提供GeoLite2公开的访问下载地址，但从2019年12月30日开始，MaxMind不再提供GeoLite2公开的访问下载地址，需要用户注册一个MaxMind帐户并获取许可密钥，才能下载GeoLite2数据库。
 
+每个账号每24小时只能下载2000次
+
+Each account can perform up to 2,000 total downloads per 24 hour period.
+
+
+
 GeoLite2数据库的下载地址即为：https://download.maxmind.com/app/geoip_download?edition_id=GeoLite2-Country&license_key=此处替换为证书密钥&suffix=tar.gz
 
 
