@@ -60,6 +60,10 @@ Each account can perform up to 2,000 total downloads per 24 hour period.
 
 GeoLite2数据库的下载地址即为：https://download.maxmind.com/app/geoip_download?edition_id=GeoLite2-Country&license_key=此处替换为证书密钥&suffix=tar.gz
 
+> 注意，用 curl 或 wget 下载时，要注意用双引号把 URL 引起来
+
+https://stackoverflow.com/questions/59709494/maxmind-pulling-geolite2-gets-401-unauthorized
+
 
 GeoIP数据库目前有两种格式，GeoLite（.dat文件）与 GeoLite2（.mmdb文件）。ModSecurity v2需要使用.dat格式，ModSecurity v3则使用.mmdb格式。
 
