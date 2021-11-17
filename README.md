@@ -9,4 +9,4 @@ This repository includes [GeoLite2](https://dev.maxmind.com/geoip/geoip2/geolite
 
 # 更新
 
-github actions 自动更新geoip信息，并发布到release中
+github actions 定期自动从 maxmind 更新geoip信息，并发布到release中
