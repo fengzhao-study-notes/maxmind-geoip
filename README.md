@@ -31,7 +31,10 @@ maxmind提供了免费的可在本地部署的geo-ip数据库（GeoLite2）（mm
 GeoLite2数据库的下载地址即为：https://download.maxmind.com/app/geoip_download?edition_id=GeoLite2-Country&license_key=此处替换为证书密钥&suffix=tar.gz
 
 
+GeoIP数据库目前有两种格式，GeoLite（.dat文件）与 GeoLite2（.mmdb文件）。ModSecurity v2需要使用.dat格式，ModSecurity v3则使用.mmdb格式。
 
+
+参考 https://www.cnblogs.com/xiaoleiel/p/8333917.html
 
 # 更新
 
