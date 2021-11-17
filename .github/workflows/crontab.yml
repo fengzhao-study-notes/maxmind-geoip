@@ -26,11 +26,11 @@ jobs:
 
       - name: Push Tag
         run: |
-          git config --global user.name 'Dreamacro'
-          git config --global user.email 'dreamacro@users.noreply.github.com'
+          git config --global user.name 'fengzhao'
+          git config --global user.email 'fengzhao1124@hotmail.com'
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
-          git tag ${{steps.tag.outputs.result}}
-          git push origin ${{steps.tag.outputs.result}}
+          git tag ${{steps.tag.outputs.result_}}_111
+          git push origin ${{steps.tag.outputs.result}}_111
       
       - name: Download file
         env: 
