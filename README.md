@@ -11,7 +11,9 @@ This repository includes [GeoLite2](https://dev.maxmind.com/geoip/geoip2/geolite
 
 Geo是geographic的缩写，意思是地理的，GeoIP即为IP地理位置数据库，可以根据IP获得地理位置信息。
 
-GeoLite2是GeoIP2的免费版本，与GeoIP2数据库相比准确性较差。GeoLite2数据库每周更新国家、城市和自治系统编号信息，更新时间为每周二。
+GeoLite2是GeoIP2的免费版本，与GeoIP2数据库相比准确性较差。
+
+GeoLite2数据库每周更新国家、城市和自治系统编号信息，更新时间为每周二。
 
 IP地理定位本质上是不精确的，地点通常靠近人口中心。GeoIP数据库提供的任何位置不应用于识别特定地址或家庭，使用精度半径作为IP地址返回的纬度和经度坐标的地理定位精度指示，IP地址的实际位置可能在这个半径和经纬度坐标所定义的区域内。
 
