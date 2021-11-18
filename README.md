@@ -58,7 +58,14 @@ Each account can perform up to 2,000 total downloads per 24 hour period.
 
 
 
-GeoLite2数据库的下载地址即为：https://download.maxmind.com/app/geoip_download?edition_id=GeoLite2-Country&license_key=此处替换为证书密钥&suffix=tar.gz
+GeoLite2数据库的下载地址即为：
+
+```shell
+
+curl -I "https://download.maxmind.com/app/geoip_download?edition_id=GeoLite2-Country&license_key=此处替换为证书密钥&suffix=tar.gz"
+
+```
+
 
 > 注意，用 curl 或 wget 下载时，要注意用双引号把 URL 引起来
 
