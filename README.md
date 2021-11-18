@@ -62,7 +62,10 @@ GeoLite2数据库的下载地址即为：
 
 ```shell
 
+# GeoLite2-Country数据库
 curl -I "https://download.maxmind.com/app/geoip_download?edition_id=GeoLite2-Country&license_key=此处替换为证书密钥&suffix=tar.gz"
+
+
 
 ```
 
