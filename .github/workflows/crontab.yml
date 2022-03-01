@@ -37,16 +37,21 @@ jobs:
           LICENSE_KEY: ${{ secrets.LICENSE_KEY }}
         run: |
           wget -O ./GeoLite2-Country.tar.gz "https://download.maxmind.com/app/geoip_download?edition_id=GeoLite2-Country&license_key=${LICENSE_KEY}&suffix=tar.gz"
-          tar zxvf ./GeoLite2-Country.tar.gz -C .
+          wget -O ./GeoLite2-City.tar.gz "https://download.maxmind.com/app/geoip_download?edition_id=GeoLite2-City&license_key=${LICENSE_KEY}&suffix=tar.gz"
+          wget -O ./GeoLite2-ASN.tar.gz "https://download.maxmind.com/app/geoip_download?edition_id=GeoLite2-ASN&license_key=${LICENSE_KEY}&suffix=tar.gz"
+          ls *.tar.gz | xargs -n1 tar xzvf          
           mkdir dist
           mv ./GeoLite2-Country_*/GeoLite2-Country.mmdb ./dist/Country.mmdb
+          mv ./GeoLite2-City_*/GeoLite2-City.mmdb ./dist/City.mmdb
+          mv ./GeoLite2-City_*/GeoLite2-ASN.mmdb ./dist/ASN.mmdb
+          
 
       - name: Upload Release
         uses: softprops/action-gh-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          files: dist/Country.mmdb
+          files: dist/*
           tag_name: ${{steps.tag.outputs.result}}
       
       - name: Upload to release branch
