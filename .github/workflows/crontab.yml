@@ -43,7 +43,7 @@ jobs:
           mkdir dist
           mv ./GeoLite2-Country_*/GeoLite2-Country.mmdb ./dist/Country.mmdb
           mv ./GeoLite2-City_*/GeoLite2-City.mmdb ./dist/City.mmdb
-          mv ./GeoLite2-City_*/GeoLite2-ASN.mmdb ./dist/ASN.mmdb
+          mv ./GeoLite2-ASN_*/GeoLite2-ASN.mmdb ./dist/ASN.mmdb
           
 
       - name: Upload Release
