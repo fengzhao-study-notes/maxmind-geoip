@@ -7,9 +7,22 @@ https://blog.maxmind.com/2019/12/18/significant-changes-to-accessing-and-using-g
 This repository includes [GeoLite2](https://dev.maxmind.com/geoip/geoip2/geolite2/) data created by [MaxMind](https://www.maxmind.com).
 
 
+
+# IP地址分配
+
+IANA(The Internet Assigned Numbers Authority)是ICANN 旗下的一个标准组织，负责 IP地址和ASN 的全球分配、DNS根区域的管理和协议分配。
+
+在IP号码管理方面，IANA 主要负责根据全球政策将未分配的 IP 块池分配给 RIR，以确保跨地区的IP地址公平分配。
+
+
 # GEOIP简介
 
-Geo是geographic的缩写，意思是地理的，GeoIP即为IP地理位置数据库，可以根据IP获得地理位置信息。
+GEO是geographic的缩写，意思是地理的，GEOIP即为IP地理位置数据库，可以根据IP获得地理位置信息。
+
+了解ipv4和互联网IP地址的分配的人都知道，IP地址跟地理坐标没有强相关的关系。
+
+
+
 
 maxmind提供了免费的可在本地部署的geo-ip数据库（GeoLite2）（mmdb以及csv格式），和geo-ip查询api服务
 
