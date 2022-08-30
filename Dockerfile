@@ -58,11 +58,9 @@ RUN set -x \
 # Download Maxmind db version 2
 # This example uses the free version from https://dev.maxmind.com/geoip/geoip2/geolite2/
 #
-# We only use the country db, you can add the city db and others if you want them.
-RUN set -x && mkdir -p /usr/share/geoip \
-  && wget -O /tmp/country.tar.gz http://geolite.maxmind.com/download/geoip/database/GeoLite2-Country.tar.gz \
-  && tar xf /tmp/country.tar.gz -C /usr/share/geoip --strip 1 \
-  && ls -al /usr/share/geoip/
+wget -O /usr/local/nginx/geo/GeoLiteCountry.mmdb https://github.com/fengzhao-study-notes/maxmind-geoip/releases/download/20220301/Country.mmdb
+wget -O /usr/local/nginx/geo/GeoLiteCity.mmdb https://github.com/fengzhao-study-notes/maxmind-geoip/releases/download/20220301/City.mmdb
+wget -O /usr/local/nginx/geo/GeoLiteASN.mmdb https://github.com/fengzhao-study-notes/maxmind-geoip/releases/download/20220301/ASN.mmdb
 
 EXPOSE 80
 EXPOSE 443
