@@ -10,7 +10,7 @@ This repository includes [GeoLite2](https://dev.maxmind.com/geoip/geoip2/geolite
 
 # IP地址分配
 
-IANA(The Internet Assigned Numbers Authority)是ICANN 旗下的一个标准组织，负责 IP地址和ASN 的全球分配、DNS根区域的管理和协议分配。
+IANA(The Internet Assigned Numbers Authority)是 ICANN 旗下的一个标准组织，负责 IP地址和ASN 的全球分配、DNS根区域的管理和协议分配。
 
 在IP号码管理方面，IANA 主要负责根据全球政策将未分配的 IP 块池分配给 RIR，以确保跨地区的IP地址公平分配。
 
